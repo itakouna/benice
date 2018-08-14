@@ -3,10 +3,9 @@ pipeline {
         label "jenkins-python"
     }
     environment {
-      ORG               = 'takouna'
+      ORG               = 'itakouna'
       APP_NAME          = 'benice'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-      DOCKER_REGISTRY   =   'https://index.docker.io/v1'
     }
     stages {
       stage('CI Build and push snapshot') {
