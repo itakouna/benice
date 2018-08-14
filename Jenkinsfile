@@ -6,7 +6,7 @@ pipeline {
       ORG               = 'takouna'
       APP_NAME          = 'benice'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-      DOCKER_REGISTRY   =   'https://index.docker.io/v1/'
+      DOCKER_REGISTRY   =   'https://index.docker.io/v1'
     }
     stages {
       stage('CI Build and push snapshot') {
